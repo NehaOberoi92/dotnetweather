@@ -1,0 +1,19 @@
+environment: development
+
+apphost: k8s
+
+label:
+  name: aspnet3core
+
+container:
+  name: aspnet3
+  pullPolicy: IfNotPresent
+  image: containerregistryneha.azurecr.io/dotnetapi
+  tag: latest
+  port: 80
+
+replicas: 3
+
+service:
+  port: 31000
+  type: LoadBalancer
