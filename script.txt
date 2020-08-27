@@ -1,3 +1,4 @@
 helm upgrade dotnetapi ./chart/ --install --force
 
 http://localhost:31000/weatherforecast
+
